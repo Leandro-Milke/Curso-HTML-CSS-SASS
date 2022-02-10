@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body {
+  font-family: Roboto, sans-serif;
+  /* caso a roboto não estea disponivel por algm 
+  problema no google, seleciona outra fonte sans-serif */
+  background-color: #ebebeb;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*
+:root{    /*possibbilita trabalhar com variáveis dentro Css 
+
+    --columbia-blue: #c1dbe3ff;
+    --tea-green: #c7dfc5ff;
+    --lemon-yellow-crayola: #f6feaaff;
+    --buff: #fce694ff;
+    --jet: #373737ff;
+}*/
+/* linha código css
+.stripped section:nth-child(2n) {  // frist-child primeiro filho, last-child pega último filho
+                                  // nth-child(numero do filho) - 2n indica os filhos multiplo de 2
+    background-color: red; 
+    padding: 2px;
+}*/
+.stripped section {
+  padding: 25px 0;
+}
+.stripped section:nth-child(2n) {
+  background-color: #336372;
+  color: white;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+.hero {
+  height: 100vh;
+  /* unidade vh é relativa a janela de visualização*/
+  display: flex;
+  /*classe de conteiner*/
+  align-items: center;
+  /*filhos centrallizados*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/pexels-s-migaj-747964.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-title {
+  background-color: rgba(55, 55, 55, 0.7);
+  text-align: center;
+  width: 100%;
+  /* largura da faixa*/
+  padding: 5% 0%;
+  /* vertical e horizontal */
+}
+.hero-title h1 {
+  /* h1 dentro do hero-title*/
+  color: #fce694ff;
+  font-size: 4.5em;
+}
+.hero-title h2 {
+  /* h2 dentro do hero-title*/
+  color: #c1dbe3ff;
+}
+
+.cards-container {
+  display: flex;
+  /* flex-direction: row; /* Troca o eixo prncipal do Flex Box - default row (lina). outro e columm (forma coluna)*/
+  justify-content: space-evenly;
+  /* centraliza os filhos com espaço entre eles - ligado ao display flex*/
+  padding: 0px 50px;
+}
+.cards-container .card {
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+.cards-container .card .card-footer {
+  position: absolute;
+  bottom: 0;
+  height: 20%;
+  background-color: gray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.advantages-section h2 {
+  margin-bottom: 0;
+}
+.advantages-section .advantages-conteiner {
+  display: flex;
+  justify-content: center;
+}
+.advantages-section .advantages-conteiner .advantage {
+  width: 40vw;
+  text-align: center;
+  font-size: 1.2em;
+}
+.advantages-section .advantages-conteiner p {
+  padding: 0px 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0vw 20vw;
+}
+form * {
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+form button {
+  background-color: #373737ff;
+  color: #f6feaaff;
+}
+
+footer {
+  background-color: black;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-info {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=general.css.map */

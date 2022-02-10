@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 20vw;
+
+    * {   // * seleciona todos elementos dentro do formulário 
+        margin: 5px 0px;  // margens dos elementos
+        border-radius: 5px; // arrendondar as bordas dos elementos
+    }
+
+    button {
+        background-color: $primary-sass;
+        color: $lemon-yellow-crayola;
+    }
+}

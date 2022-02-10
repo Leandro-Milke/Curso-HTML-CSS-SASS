@@ -1,0 +1,26 @@
+
+.advantages-section{
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .advantages-conteiner{
+
+        display: flex;
+        justify-content: center; // centralizando as divs filhos    
+
+        .advantage {
+            
+            width: 40vw;
+            text-align: center;  // centralizando os textos dentro das divs
+            font-size: 1.2em;
+        }
+
+        p {
+            padding: 0px 15px;
+            
+        }
+    }
+
+}

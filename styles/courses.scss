@@ -1,0 +1,53 @@
+@mixin centralize-child {    // análoga á uma função que poderá ser usada em outros pontos, arquios
+                             // utilizamos mixin com blocos de códigos repetidos para otimizar
+    display: flex;             // procedimento para 
+    align-items: center;       // alinhar
+    justify-content: center;   // os componentes no centro da div
+}
+
+@mixin bottom-full {
+    bottom: 0;
+    left: 0;
+    right: 0;  // três parãmetros para ocupar parte inferior do card em toda extenxão
+}
+
+@mixin subtitle-font($fontValue: 1.2em) {   // valor default 1.2em, caso não seja passado nenhum valor assumirá
+                                            // o valor 1.2em
+    font-size: $fontValue;
+    font-weight: bold;
+    
+}
+
+
+.cards-container{
+        
+    display: flex;
+ 
+   /* flex-direction: row; /* Troca o eixo prncipal do Flex Box - default row (lina). outro e columm (forma coluna)*/
+    
+   justify-content: space-evenly;  /* centraliza os filhos com espaço entre eles - ligado ao display flex*/
+ 
+   padding: 0px 50px;
+   
+   .card{
+     height: 400px;
+     width: 400px;
+     
+     position: relative;  // vai posbilitar colocar figura ou textou em cima da imagem
+                          // ira liberar o uso do position: absolute no card-footer
+     .card-footer{
+        position: absolute;
+        bottom: 0;
+        height: 20%;
+
+        background-color: gray;
+        color: white;
+
+        @include centralize-child();  // para poder usar mixin centralize-child neste ponto
+        @include bottom-full();
+        @include subtitle-font();
+        
+     }
+    }
+}
+

@@ -1,0 +1,45 @@
+body{
+    font-family: Roboto, sans-serif; /* caso a roboto não estea disponivel por algm 
+                                    problema no google, seleciona outra fonte sans-serif */
+    background-color: darken(white, 8%);
+
+}
+
+
+h2{
+    text-align: center;
+}
+
+/*
+:root{    /*possibbilita trabalhar com variáveis dentro Css 
+
+    --columbia-blue: #c1dbe3ff;
+    --tea-green: #c7dfc5ff;
+    --lemon-yellow-crayola: #f6feaaff;
+    --buff: #fce694ff;
+    --jet: #373737ff;
+}*/
+
+$primary-sass: #373737ff;
+$secundary-sass: #fce694ff;
+$columbia-blue: #c1dbe3ff;
+$tea-green: #c7dfc5ff;
+$lemon-yellow-crayola: #f6feaaff;
+
+/* linha código css
+.stripped section:nth-child(2n) {  // frist-child primeiro filho, last-child pega último filho
+                                  // nth-child(numero do filho) - 2n indica os filhos multiplo de 2
+    background-color: red; 
+    padding: 2px;
+}*/
+
+.stripped section {  
+    padding: 25px 0;
+
+    &:nth-child(2n){            // & aponta para o pai 
+        background-color: darken($columbia-blue, 50%);
+        color: white;
+    }
+ 
+
+}
