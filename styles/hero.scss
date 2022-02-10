@@ -1,35 +1,29 @@
 
 
 .hero {
-    height: 100vh;   /* unidade vh é relativa a janela de visualização*/
-   // background-color: $tea-green;
+    height: 100vh;
+    display: flex;  
+    align-items: center;
 
-    display: flex;   /*classe de conteiner*/
-    align-items: center; /*filhos centrallizados*/
-
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('./images/pexels-s-migaj-747964.jpg'); // inseri imagem background
-   // linear-gradient - coloca transparência na figura
-    background-size: cover; // imagem irá cobrir todo o espaço
-    background-repeat: no-repeat;  // não irá repetir a imagem
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('./images/pexels-s-migaj-747964.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
     background-position: center;
     
 }
 
 .hero-title {
     background-color: adjust-color($color: $primary-sass, $alpha: -0.3);
-    // adjust-color auxília no ajuste da cor de uma variavel, não alterando em outros locais q está sendo usada
     text-align: center;  
-    width: 100%;      /* largura da faixa*/
-    padding: 5% 0%;   /* vertical e horizontal */
+    width: 100%;      
+    padding: 5% 0%;  
 
-    h1{  /* h1 dentro do hero-title*/
+    h1{  
         color: $secundary-sass;
         font-size: 4.5em;
-
     }
 
-    h2{  /* h2 dentro do hero-title*/
-    color: $columbia-blue;
-    
-}
+    h2{ 
+    color: $columbia-blue;    
+    }
 }

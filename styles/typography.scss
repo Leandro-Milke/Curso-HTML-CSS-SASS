@@ -1,9 +1,9 @@
-@for $i from 6 through 1 {     // to < e through <=
+@for $i from 6 through 1 {    
     $step: 0.25;
     $initial: 1;
 
     $extra: ((6 - $i) * $step);
-    h#{$i}{                    // concatena ou interpola h com a variavel i
+    h#{$i}{                    
         font-size: #{$extra + $initial}em;
     }
 }
